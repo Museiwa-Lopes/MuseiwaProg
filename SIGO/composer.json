@@ -1,0 +1,9 @@
+{
+    "name": "musei/sigo",
+    "version": "1.0.0",
+    "require": {
+        "dompdf/dompdf": "^3.1",
+        "africastalking/africastalking": "^3.0",
+        "twilio/sdk": "^8.6"
+    }
+}
