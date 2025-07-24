@@ -1,0 +1,110 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: rgba(30, 30, 60, 0.95);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 2rem;
+  border: 2px solid #0f3460;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #e94560, #0f3460);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px #0f3460;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background: #0f3460;
+  color: #fff;
+  box-shadow: 0 2px 8px #e94560;
+  transition: box-shadow 0.3s;
+}
+input[type="text"]:focus {
+  box-shadow: 0 0 12px #e94560, 0 2px 8px #0f3460;
+  outline: none;
+}
+
+#filterInfo {
+  font-size: 1rem;
+  color: #e94560;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px #0f3460;
+  animation: tableFadeIn 1s;
+}
+
+@keyframes tableFadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+th, td {
+  padding: 16px 20px;
+  border: 1px solid #e94560;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+th {
+  background: linear-gradient(90deg, #e94560 0%, #0f3460 100%);
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 4px #0f3460;
+}
+
+tr {
+  transition: background 0.3s;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(233, 69, 96, 0.08);
+}
+
+tr:hover {
+  background: linear-gradient(90deg, #e94560 10%, #0f3460 90%);
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  th, td {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+}
